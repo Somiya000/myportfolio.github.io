@@ -1,0 +1,172 @@
+//=========Common css =============
+$color1: #28a745;
+// ========main css ===============
+.carousel,
+.carousel-inner {
+    height: 70vh;
+}
+.carousel-img1{
+  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../image/banner/banner.jpg");
+  height: 70vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit ;
+}
+.carousel-img2{
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../image/banner/banner.jpg");
+  height: 70vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.carousel-img3{
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../image/banner/banner.jpg");
+  height: 70vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+#about{
+  background-color: rgba(0, 0, 0, 0.26);
+  h1{
+    border-bottom: 3px solid $color1;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  a{
+    i{
+      font-size: 20px;
+    }
+  }
+}
+#service{
+  background: url("../image/banner/section_bg04.jpg");
+  h1{
+    border-bottom: 3px solid $color1;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .contain{
+    position: relative;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .overlay{
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 5px;
+      .text-area {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50px, -70px);
+        color: #fff;
+        text-align: center;
+        i{
+          color: #000;
+          font-size: 45px;
+          padding: 12px 14px;
+          border-radius: 50%;
+          background-color: #fff;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+#portfolio{
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../image/banner/somo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  h1{
+    border-bottom: 2px solid $color1;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .contain{
+    position: relative;
+    img{
+      display: block;
+    }
+    .overlay{
+      position: absolute;
+      background: rgba(2, 153, 28, 0.767);
+      height: 100%;
+      width: 88%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0;
+      transition: 1s ease-in-out;
+      .text-area{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-90px, -50px);
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+  .contain:hover .overlay{
+    opacity: 1;
+    
+    transition: .5s ease-in-out;
+    width: 100%;
+  }
+}
+#contact{
+  background: linear-gradient(rgba(0, 0, 0, 0.897),rgba(0,0,0,0.8));
+}
+#education{
+  background: linear-gradient(rgba(0,0,0,0.4) rgba(0,0,0,0.4)),url(../image/banner/web-design-2906159_1920.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  h1{
+    border-bottom: 3px solid $color1;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .edu-item{
+    background: #000;
+    margin:10px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    i{
+      font-size: 30pt;
+      padding: 20px 15px;
+      background-color: #fff;
+      color: $color1;
+      border-radius: 100%;
+      position: absolute;
+      transform: translate(-35px,-80px);
+      border: 2px solid black
+    }
+    h4{
+      margin-top: 20px;
+    }
+
+  }
+}
+footer{
+  background-color: #000;
+}
+//================ media Quary ==================
